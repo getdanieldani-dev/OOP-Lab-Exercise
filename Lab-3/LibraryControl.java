@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class LibraryControl {
     public static void main(String[] args) {
         //Scanner object input to accept input from users.
-        Scanner input = new Scanner(System.io);
+        Scanner input = new Scanner(System.in);
         
         // Arrays for book titles and availability
         String[] bookTitles = {"Java Programming", "Data Structures", "Algorithms", "Database Systems"};
@@ -71,5 +71,6 @@ public class LibraryControl {
          */
     }
 }
+
 
 
