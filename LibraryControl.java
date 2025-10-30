@@ -1,5 +1,10 @@
+import java.util.Scanner
+
 public class LibraryControl {
     public static void main(String[] args) {
+        //Scanner object input to accept input from users.
+        Scanner input = new Scanner(System.io);
+        
         // Arrays for book titles and availability
         String[] bookTitles = {"Java Programming", "Data Structures", "Algorithms", "Database Systems"};
         int[] bookCopies = {3, 2, 1, 4};
@@ -23,12 +28,19 @@ public class LibraryControl {
          *      0: Java Programming - Available copies: 3 - Price: 450.0 birr
          *      1: Data Structures - Available copies: 2 - Price: 380.0 birr
          *
-         * 2. **Member Login**
+         * 2. **Calculate Total Price of Available Books**
+         *    - Write a loop to calculate and print the total value of all books
+         *      currently available in the library.
+         *    - The total value = sum of (bookCopies[i] * bookPrices[i]) for all books.
+         *    - Example output:
+         *      "Total value of available books: 6,280.0 birr"
+         *
+         * 3. **Member Login**
          *    - Ask the user to choose their member index (0, 1, or 2).
          *    - Display a welcome message, for example:
          *      "Welcome, Alice!"
          *
-         * 3. **Borrow a Book**
+         * 4. **Borrow a Book**
          *    - Ask the user to enter the index of the book they want to borrow.
          *    - Check if the selected book has at least one available copy.
          *        * If available: print "You borrowed this book!" 
@@ -37,7 +49,7 @@ public class LibraryControl {
          *            - borrowedCount[memberIndex] = borrowedCount[memberIndex] + 1
          *        * If not available: print "Sorry, this book is currently unavailable."
          *
-         * 4. **Return a Book**
+         * 5. **Return a Book**
          *    - Ask the user to enter the index of the book they want to return.
          *    - Increase the available copy count:
          *        bookCopies[index] = bookCopies[index] + 1
@@ -45,7 +57,7 @@ public class LibraryControl {
          *        borrowedCount[memberIndex] = borrowedCount[memberIndex] - 1
          *    - Print "Thank you! You returned this book."
          *
-         * 5. **Service Menu**
+         * 6. **Service Menu**
          *    - Let the user repeatedly choose one of the following options:
          *        1. Borrow a book
          *        2. Return a book
@@ -53,17 +65,10 @@ public class LibraryControl {
          *    - Perform the appropriate action based on the user's choice.
          *    - Continue showing the menu until the user chooses to exit.
          *
-         * 6. **Calculate Total Price of Available Books**
-         *    - Write a loop to calculate and print the total value of all books
-         *      currently available in the library.
-         *    - The total value = sum of (bookCopies[i] * bookPrices[i]) for all books.
-         *    - Example output:
-         *      "Total value of available books: 6,280.0 birr"
-         *
          * ---------------------------------------------------------
          * Use loops, conditionals, and array operations to complete the tasks.
-         * You may use Scanner for user input.
          * =========================================================
          */
     }
 }
+
