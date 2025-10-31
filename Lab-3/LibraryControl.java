@@ -33,7 +33,7 @@ public class LibraryControl {
          *      currently available in the library.
          *    - The total value = sum of (bookCopies[i] * bookPrices[i]) for all books.
          *    - Example output:
-         *      "Total value of available books: 6,280.0 birr"
+         *      "Total value of available books: total value birr"
          *
          * 3. **Member Login**
          *    - Ask the user to choose their member index (0, 1, or 2).
@@ -43,19 +43,17 @@ public class LibraryControl {
          * 4. **Borrow a Book**
          *    - Ask the user to enter the index of the book they want to borrow.
          *    - Check if the selected book has at least one available copy.
-         *        * If available: print "You borrowed this book!" 
+         *        * If available: print "You borrowed <book title>!" 
          *          and update:
-         *            - bookCopies[index] = bookCopies[index] - 1
-         *            - borrowedCount[memberIndex] = borrowedCount[memberIndex] + 1
-         *        * If not available: print "Sorry, this book is currently unavailable."
+         *            - bookCopies for the book
+         *            - borrowedCount for the user
+         *        * If not available: print "Sorry, <book title> is currently unavailable."
          *
          * 5. **Return a Book**
          *    - Ask the user to enter the index of the book they want to return.
          *    - Increase the available copy count:
-         *        bookCopies[index] = bookCopies[index] + 1
          *      and reduce the member's borrowed count:
-         *        borrowedCount[memberIndex] = borrowedCount[memberIndex] - 1
-         *    - Print "Thank you! You returned this book."
+         *    - Print "Thank you! You returned <book title>."
          *
          * 6. **Service Menu**
          *    - Let the user repeatedly choose one of the following options:
@@ -71,6 +69,3 @@ public class LibraryControl {
          */
     }
 }
-
-
-
