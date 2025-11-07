@@ -78,7 +78,6 @@ public class LibraryControlOOP {
         // TODO 9: Test edge cases
         System.out.println("\n=== TESTING EDGE CASES ===");
         // Try to borrow a book with 0 copies
-        // Try to return a book that wasn't borrowed
         // Test the isAvailable() method
         
         
