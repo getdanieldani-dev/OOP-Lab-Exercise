@@ -5,7 +5,7 @@
  * TODO: Create a Magazine class that extends LibraryItem
  * Magazines have different properties and loan rules.
  */
-public class Magazine extends LibraryItem {
+public class Magazine {
     // TODO 1: Add Magazine-specific properties
     // Add private fields for: publisher (String), issueNumber (int), category (String),
     // timesRenewed (int) - tracks how many times borrowed
