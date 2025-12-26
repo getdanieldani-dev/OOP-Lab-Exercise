@@ -52,19 +52,37 @@ public class LibraryGUI {
         JScrollPane scrollPane = new JScrollPane(displayArea); 
         
         JPanel bottomPanel = new JPanel();
-        /* TODO add display button, text field to enter borrow index, borrow button, 
-         * text field to enter return index and return button on the bottom panel
+        
+        /* 
+         * TODO: Implement enhanced bottom panel with the following components and functionality:
          * 
-         * add action listener to the display button, when cliked all avilable items 
-         * should be displayed on the displayArea, you can use the setText method of the text area,
-         * the getLibraryItemsInfo helper method will return all the avilable items as a string.
-         *
-         * add action listener to the borrow button, when clicked it should borrow the selected item in the
-         * borrow index text field and display the message, use member1 to borrow the item.
-         *
-         * add action listener to the return button, when clicked it should return the selected item in the
-         * return index text field and display the message, use member1 to borrow the item.
-        */
+         * 1. ADD DISPLAY BUTTON:
+         *    - Create a JButton labeled "Display"
+         *    - Add it to the bottom panel
+         *    - When clicked, display all available items in the displayArea using setText() method
+         *    - Use getLibraryItemsInfo() helper method to get all available items as a string
+         * 
+         * 2. ADD BORROW INDEX TEXT FIELD AND BUTTON:
+         *    - Create a JTextField for entering borrow index
+         *    - Create a JButton labeled "Borrow"
+         *    - Add both to the bottom panel
+         *    - When borrow button is clicked:
+         *        a. Get the index from the borrow index text field
+         *        b. Convert it to an integer
+         *        c. Use member1.borrowItem(items[index]) to borrow the item
+         *        d. Display success/failure message in displayArea
+         * 
+         * 3. ADD RETURN INDEX TEXT FIELD AND BUTTON:
+         *    - Create a JTextField for entering return index
+         *    - Create a JButton labeled "Return"
+         *    - Add both to the bottom panel
+         *    - When return button is clicked:
+         *        a. Get the index from the return index text field
+         *        b. Convert it to an integer
+         *        c. Use member1.returnItem(items[index]) to return the item
+         *        d. Display success/failure message in displayArea
+         */
+        
         libraryWindow.add(title, BorderLayout.NORTH);
         libraryWindow.add(scrollPane, BorderLayout.CENTER);
         libraryWindow.add(bottomPanel, BorderLayout.SOUTH);
